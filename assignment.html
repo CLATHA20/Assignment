@@ -1,148 +1,364 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css"
+        integrity="sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/regular.css"
+        integrity="sha384-hCIN6p9+1T+YkCd3wWjB5yufpReULIPQ21XA/ncf3oZ631q2HEhdC7JgKqbk//4+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css"
+        integrity="sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/brands.css"
+        integrity="sha384-i2PyM6FMpVnxjRPi0KW/xIS7hkeSznkllv+Hx/MtYDaHA5VcF0yL3KVlvzp8bWjQ" crossorigin="anonymous">
+
+    <title>Document</title>
+
 <style>
-ul.head{
-display:flex;
-margin:auto;
-padding:10px;
-background-color:gray;
-color:black;
-list-style-type:none;
-justify-content:center;
-}
-.fa {
-margin:auto;
-text-align: center;
-text-decoration:none;
-display:flex;
-}
-li{
-display:inline-block;
-color:black;
-margin:auto;
-text-intent:10px;
-}
-
-ul.navbar{
-margin:auto;
-padding:20px;
-text-color:#0000ff;
-display:flex;
-background-color:white;
-}
-li.navbar{
-display:inline-block;
-color:blue;
-padding:20px;
-margin:auto;
-text-align:center;
-}
-button1{ color:black;
- background-color:black;
-}
 *{
- box-sizing:border-box;
-}
-body{
- margin-left:90px;
- display:inline;
-}
-.container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+    margin: 0px;
+    padding:0px;
 }
 
-.container .content {
-  position: absolute;
-  bottom:20px;
-  right:20px;
-  color: #f1f1f1;
-  padding: 2px;
-  width:500px;
+
+.nav {
+      background-color:rgb(133, 129, 129);
+      display:flex;
+      padding:5px;
+      justify-content: center;
+      height:40px;
 }
-font::after{
- content:"";
- display:inline;
- }
+.nav ul {
+      width:720px;
+      text-align:left;
+    
+}
+.nav ul li {
+    display: inline-block;
+    list-style: none;
+    text-indent: 10px;
+}
+.ul.button {
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    size: 25px;
+    padding-left:20px;
+   
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid rgb(47, 48, 47);
+    margin-left:60px;
+}
+      
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid rgb(33, 34, 34);
+} 
+.header{
+    height:50px;
+    /* background-color: rgb(56, 55, 55); */
+    display:flex;
+    justify-content: center;
+}
+.header .logo{
+    width:720px;
+}
+.logo ul{
+    display: inline-block;
+    list-style: none;
+    text-indent: 10px;
+    float:right;
+    padding:8px;
+
+}
+.logo ul li{
+    display: inline-block;
+}
+.advertisement{
+    width:100%;
+    height:400px;
+    background-image: url(./thor1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+}
+.topheader{
+    width:100%;
+    max-width:720px;
+    padding-top:60px;
+    align-items: left;
+}
+.menubar{
+    height:100px;
+    width: 100%;
+    background-color: antiquewhite;
+    display:flex;
+    justify-content: center;
+}
+.about{
+    width:13.32%;
+    max-width: 720px;
+    background-color: white;
+    display: flex;
+}
+.content{
+    width: 100%;
+    height:300px;
+    background-color:rgb(68, 49, 49);
+    display:flex;
+    justify-content: center;
+}
+.title{
+    width:100%;
+    max-width:720px;
+    background-color:white;
+    padding-top:10px;
+}
+.card {
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin:inherit;
+    box-shadow: 10px 5px 20px 5px;
+}
+.toolbar{
+    width:100%;
+    height:300px;
+    background-color: rgb(58, 58, 102);
+    display: flex;
+    justify-content: center;
+}
+.template{
+    width:100%;
+    max-width: 720px;
+    background-color: white;
+    display:flex; 
+    flex-direction: row;   
+}
+.templatecontent{
+    padding-left:10px;
+    
+}
+.footer{
+    width:100%;
+    height:300px;
+    background-color:black;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.calculator{
+    width:100%;
+    max-width:720px;
+    background-color: aliceblue;
+    
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    flex: 33.3%;
+    padding: 0 16px;
+  }
 </style>
 </head>
-<body> 
-<ul class="head">
-<i style="font-size:20px" class="fa">&#xf095;</i>
-<li>80012345678</li>
-<i style="font-size:20px" class="fa">&#xf003;</i>
-<li>INFOCOMPANY</li>
-<i style="font-size:20px" class="fa">&#xf041;</i>
-<li> 121WORKSTREET STREET NEWYORK,USA</li>
-<li>LOGIN|SIGNUP</li>
-<i style="font-size:20px" class="fa">&#xf0e1;</i><br>
-<i style="font-size:20px" class="fa">&#xf099;</i><br>
-<i style="font-size:20px" class="fa">&#xf09a;</i></li>
-</ul><br>
-<span>
-<ul class="navbar">
-<li>Home</li>
-<li>About Us </li>
-<li>Services</li>
-<i style="font-size:24px" class="fa">&#xf0dd;</i>
-<li>Pages</li>
-<i style="font-size:24px" class="fa">&#xf0dd;</i>
-<li>Features</li>
-<i style="font-size:24px" class="fa">&#xf0dd;</i>
-<li>News</li>
-<Button type=submit>GET IN TOUCH</button>
-</ul>
-</span>
-<div class="container">
-  <img src="hole.jpg" width=110% height=50%>
-  <div class="content">
-    <h1>The Fastest way to your new home</h1>
-    <p>Affordable prizes are here to meet your house!<br>check the latest offers by top banks and financial companies<br>
-<button type="submit">LOAN CALCULATOR</button>  
-</div>
-</div>
-<ul class="font">
-<i style="font-size:20px" class="fa">&#xf200;</i>
-<li>RATE US LOW AS from 3.74%</li>
-<i style="font-size:20px" class="fa">&#xf219;</i>
-<li>AMOUNT OF CREDIT up to $5M</li>
-<i style="font-size:20px" class="fa">&#xf1da;</i>
-<li>FAST & EASY PROCESS only 7 Days</li>
-<i style="font-size:20px" class="fa">&#xf073;</i>
-<li>LONG LOAN TERM up to 30 Year</li>
-</ul>
-<div>
- <button type="submit">OUR SERVICES</button>
-  <h2>Find Loan Products We Offer</h2>
-  <br>
-  <ul>
-  <li><a href="#" class="btn btn-info btn-lg" height:300px width=300px>
-     BUYING A HOME<br> We reward money saving real estate program for home buyers</a></li>
-  <li>REFINANCING We refinance our clients as rates change quickly and. </li>
-  <li>CREDIT SERVICE Credit is a financial instrument used to help clients</li>
-  </ul>
-  <div>
-  <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe><p class="year">40 years, we passionate about
-  achieving better results for our clients</p>
-  <button type="submit">WHAT WE DO</button>
-  <button type="submit">CLIENT RESULTS</button>
-  <button type="submit">SOCIAL IMPACT</button>
-  <pre>We constantly work on delivering the best loan services to our clients.Our
-  officer will walk you through every step of the loan application and 
-  approval process-from answering questions,to closing your loan quickly.</pre>
-  <button type="submit">GET IN TOUCH</button>
-  </div>
-  <div>
-  <button type="submit">CALCULATOR</button><br>
-  <h2>My Monthly Payment</h2>
+
+<body>
+    <div class="nav">
+
+        <ul>
+            <li> <i class="fas fa-phone"></i>9159366924</li>
+            <li> <i class="fas fa-envelope">sarguna1771@gmail.com</i></li>
+            <li> <i class="fas fa-map-marker-alt">location</i> </li>
+            <button class="button button1" style="justify-content: end;">Log In</button>
+            <button class="button button2">Sign Up</button>
+            in
+            <i class="fab fa-facebook-f" style="padding-left: 15px;"></i>
+            <i class="fab fa-twitter" style="padding-left: 15px;"></i>
+            <i class="fab fa-instagram" style="padding-left: 15px;"></i>
+        </ul>
+
+
+    </div>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <img src="./nature1.jpg" style="height:50px;">
+            <ul>
+                <li><a href="" style="color:red;">home</a></li>
+                <li><a href="" style="color:red;">About us</a></li>
+
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="background-color:white;color:black; border:none;">
+                    news
+                </button>
+                <li><a href="" style="color:red;">blog</a></li>
+                <li><a href="" style="color:red;padding-right:20px;">faq</a></li>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="background-color:white;color:black;">
+                    get in touch
+                </button>
+            </ul>
+        </div>
+    </div>
+    <div class="advertisement">
+        <div class="topheader">
+            <h2> Hi! Welcome Buddy<br>How was the day</h2>
+            <p>this is sarguna k from palani<br>studied at ksr mechatronics dpt</p>
+            <button class="btn btn-secondary" type="button" style="background-color:yellow;color:black;">
+                Know More
+            </button>
+        </div>
+    </div>
+    <div class="menubar">
+        <div class="about">
+            <i class="fas fa-chart-pie" style="align-items: center;justify-content: center;display:flex;"></i>
+            <p style="align-items: center;justify-content: center;display:flex;padding-top:20px;padding-left:5px;">RATE
+                US<br>from <strong><br>9.0%</strong> </p>
+        </div>
+        <div class="about">
+            <i class="far fa-gem" style="align-items: center;justify-content: center;display:flex;"></i>
+            <p style="align-items: center;justify-content: center;display:flex;padding-top:20px;padding-left:5px;"> amnt
+                of credit<br>upto<strong><br>$5M</strong></p>
+        </div>
+        <div class="about">
+            <i class="far fa-clock" style="align-items: center;justify-content: center;display:flex;"></i>
+            <p style="align-items: center;justify-content: center;display:flex;padding-top:20px;padding-left:5px;"> fast
+                & easy process<br>only 7days </p>
+        </div>
+        <div class="about">
+            <i class="far fa-calendar-alt" style="align-items: center;justify-content: center;display:flex;"></i>
+            <p style="align-items: center;justify-content: center;display:flex;padding-top:20px;padding-left:5px;">Long
+                tern turn<br>Upto 30 years </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="title">
+            <h style="font-size:10px;border: 1px solid black;background-color:rgb(187, 184, 184)">OUR SERVICES</h><br>
+            <p style="padding-top:10px;"><b>find loan productd we know</b></p>
+
+            <div style="display:flex;margin-right: auto;padding-left:13px;">
+                <div class="card border-success mb-2" style="max-width: 20rem; ">
+                    <div class="card-header bg-transparent "><i class="fas fa-home"></i></div>
+                    <div class="card-body text-success">
+                        <p class="card-text" style="color:rgb(173, 174, 175);font-size:20px; ">01.<B
+                                style="color:black;">MARVEL</B></p>
+                    </div>
+                    <div class="card-footer bg-transparent ">Avengers End Game war</div>
+                </div>
+                <div class="card border-success mb-2" style="max-width: 20rem;">
+                    <div class="card-header bg-transparent "><i class="fas fa-home"></i></div>
+                    <div class="card-body text-success">
+                        <p class="card-text" style="color:rgb(173, 174, 175);font-size:20px; ">01.<B
+                                style="color:black;">MARVEL</B></p>
+                    </div>
+                    <div class="card-footer bg-transparent ">Avengers End Game war</div>
+                </div>
+
+                <div class="card border-success mb-2" style="max-width: 20rem;">
+                    <div class="card-header bg-transparent "><i class="fas fa-home"></i></div>
+                    <div class="card-body text-success">
+                        <p class="card-text" style="color:rgb(173, 174, 175);font-size:20px; ">01.<B
+                                style="color:black;">MARVEL</B></p>
+                    </div>
+                    <div class="card-footer bg-transparent ">Avengers End Game war</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toolbar">
+
+        <div class="template">
+            <video width="50%" height="80%" controls>
+                <source src="./video.mp4" type="video/mp4">
+            </video>
+
+            <div class="templatecontent">
+
+                <h3 style="border-left:inset;">hi welcome to my template</h3><br>
+                <button class="btn btn-secondary" type="button" style="background-color:yellow;color:black;">
+                    Know More
+                </button>
+
+                <button class="btn btn-secondary" type="button"
+                    style="background-color:rgb(216, 216, 213);color:black;">
+                    Know More
+                </button>
+
+                <button class="btn btn-secondary" type="button"
+                    style="background-color:rgb(216, 216, 213);color:black;">
+                    Know More
+                </button>
+                <p style="padding-top:10px;">hi welcome to my world...!!!we welcomes you all to my pages.. hi welcome to
+                    my world...!!!we welcomes you all..</p>
+
+                <button class="btn btn-secondary" type="button"
+                    style="background-color:rgb(216, 216, 213);color:black;">
+                    Get in touch
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="calculator" style="padding-top:30px">
+
+            <h style="font-size:10px;border: 1px solid black;background-color:rgb(187, 184, 184)">CALCULATOR</h>
+            <h2>My Monthly Payment</h2>
+
+            <div class="row">
+                <div class="column">
+                    <label>Loan Amount</label>
+                    <input type="number" placeholder="1000000">
+                </div>
+                <div class="column">
+                    <label>Residual Value</label>
+                    <input type="number" placeholder="10000">
+                </div>
+                <div class="column">
+                    <label>Interst Rate</label>
+                    <input type="number" placeholder="%">
+                </div>
+                <div class="column">
+                    <label>Number of Months</label>
+                    <input type="number" placeholder="36">
+                </div>
+                <div class="column">
+                    <label>Monthly Payments</label>
+                    <input type="number" placeholder="12000">
+                </div>
+                <div class="column">
+                    <label>Total Payment</label>
+                    <input type="number" placeholder="1200000">
+                </div>
+            </div>
+
+            <button class="btn btn-secondary" type="button" style="background-color:rgb(218, 218, 61);color:black; ">
+                Calculate
+            </button>
+            <i style="text-indent: 10px;line-height: 5;" class="far fa-comment-dots">atlast end of the template......</i>
+        </div>
+
+
+
+
+    </div>
+    </div>
+
+
 </body>
 </html>
-
