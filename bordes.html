@@ -1,22 +1,29 @@
 <html>
 <head>
-<meta utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   *{
   margin:0;
   padding:0;
  }
- body{
+ .body{
   margin:auto;
   width:100%;
+  justify-content:center;
  }
  .A{
-   width:100%;
-   display: flex;
+   width:900px;
+   margin:auto;
+   font-size:10px;
+   height:30px;
+   background-color:gray;
+   align-item:center;
  }
  .B{
     width:70%;
-	display: flex;
+	display:flex;
+	float:left;
  }
  .B1{
      width:30%;
@@ -25,6 +32,7 @@
  .C{
      width:49%;
 	 display:flex;
+	 float:right;
  }
  .C1{
      width:49%;
@@ -33,83 +41,117 @@
  .D{
     width:100%;
 	display:flex;
+	margin:auto;
  }
  .E{
     width:20%;
 	display:flex;
  }
  .E1{
-    width:60%;
-	display:flex;
+    width:30%;
  }
-.E2{
-    width:20%;
-	display:flex;
-}
-.F{
-    width:100%;
-	display:flex;
-}
-.G{
-    width:40%;
-	display:flex;
-}
-.H{
-    width:100%;
-	display:flex;
+.dropbtn {
+  background-color:gray;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
 }
 
-.I1,.I2,.J1,.J2{
-   width:50%;
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:GRAY;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: gray;
+}
+.E3{
+   width:30%;
    display:flex;
 }
 
-
 </style>
 <body>
-   <div class="A" style="border:3px solid black;width:100%;height:3%;">
-  <div class="B" style="border:1px solid red;width: 70%;">
-    <div style="border:1px solid blue;width:33%;"></div>
-    <div style="border:1px solid yellow;width:33%;"></div>
-    <div style="border:1px solid purple;width:34%;"></div>
+<div class="a" style="width:100%; padding-top:14px;">
+<div class="A" style="width:900px;">
+  <div class="B"  style="width: 70%;">
+    <div style="width:15%;"><i  class="fa" style="font-size:14px;">&#xf095;</i>80012345678</div>
+    <div style="width:15%;"><i class="fa" style="font-size:14px;">&#xf003;</i>INFOCOMPANY</div>
+    <div style="width:50%;"><i  class="fa" style="font-size:14px;" >&#xf041;</i>121,WORKSTREET(ST),NEWYORK,USA</div>
   </div> 
-  <div class="B1" style="border:3px solid green;width:30%;">
-     <div class="C" style="border:2px solid violet;width: 49%;">
-        <div style="border:1px solid red;width:33%;"></div>
-        <div style="border:1px solid green;width:33%;"></div>
-        <div style="border:1px solid indigo;width:33%;"></div>
+  <div class="B1" style="width:30%;">
+     <div class="C" style="width: 49%;">
+        <div style="width:33%;"><a href="#">SIGNUP</div>
+        <div style="width:33%;">|</div>
+        <div style="width:33%;"><a href="#">LOGIN</div>
       </div>
-     <div class="C1" style="border:2px solid pink;width:49%;">
-        <div style="border:1px solid gray;width:25%;"></div>
-        <div style="border:1px solid blue;width:24%;"></div>
-        <div style="border:1px solid purple;width:25%;"></div>
-        <div style="border:1px solid brown;width:24%;"></div>
-     </div>
+     <div class="C1" style="width:49%;">
+        <div style="width:25%;"><a href="#"><i class="fa">&#xf0e1;</i></a></div>
+        <div style="width:24%;"><a href="#"><i class="fa">&#xf099;</i></a></div>
+        <div style="width:25%;"><a href="#"><i class="fa">&#xf09a;</i></a></div>
+        <div style="width:24%;"><a href="#"><i class="fa">&#xf16d;</i></a></div>
+          </div> 
+	 </div>
    </div>
 </div>
-<div class="D" style="border:3px solid brown;width:100%;height:3%;">
-   <div class="E" style="border:2px solid lightgray;width:20%;"></div>
-   <div class="E1" style="border:2px solid black;width:60%;">
-       <div style="border:1px solid blue;width:16%;"></div>
-	   <div style="border:1px solid white;width:16%;"></div>
-	   <div style="border:1px solid orange;width:16%;"></div>
-	   <div style="border:1px solid blue;width:16%;"></div>
-	   <div style="border:1px solid white;width:16%;"></div>
-	   <div style="border:1px solid orange;width:20%;"></div>
-   </div>
-   <div class="E2" style="border:2px solid Indigo;width:20%;"></div>
+<div class="D" style="width:100%;font-size:15px;padding:14px 0px;">
+   <div class="E" style="width:20%;"><img src="katomaron.jpg" alt="kat" style="width:80px;height:80px;margin-right:15px;"></div>
+   <div class="E1" style="width:30%;">
+      <div style="width:10%;"><a href="#">HOME</a></div>
+	   <div style="width:10%;"><a href="#">ABOUT US</div>
+	   <div style="width:10%;"><a href="#">SERVICES</div>
+	   <div class="w3-dropdown-hover w3-mobile"></div>
+	</div>
+   <div class="dropdown">
+      <button class="dropbtn">PAGES<i style="font-size:24px" class="fa">&#xf0dd;</i></button>
+      <div class="dropdown-content" style="width:16px;">
+        <a href="#">Link 1</a>
+         <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+      </div>
+    </div>	
+    <div class="dropdown" style="width:30%;">
+      <button class="dropbtn">FEATURES<i style="font-size:24px" class="fa">&#xf0dd;</i></button>
+      <div class="dropdown-content" style="width:16px;">
+         <a href="#">Link 1</a>
+         <a href="#">Link 2</a>
+         <a href="#">Link 3</a>
+      </div>
+    </div>	
+    <div class="dropdown" style="width:30%;">
+      <button class="dropbtn">NEWS<i style="font-size:24px" class="fa">&#xf0dd;</i></button>
+      <div class="dropdown-content" style="width:16px;">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>	
+   <div class="button" style="width:20%;">GET IN TOUCH<button</div>
 </div>
-<div class="F" style="border:2px solid red;width:100%;">
-   <div class="G" style="border:2px solid green;width:30%;float:left;padding-left:15px;"> 
-   <p>The Fastest way to your new home
-      Affordable prizes are here to meet your house!
-      check the latest offers by top banks and financial companies</p></div>
-</div>
-<div class="H" style="border:3px solid green;width:100%;height:10%;">
-      <div class="I1" style="border:2px solid red;width:50%;"></div>
-	  <div class="I2" style="border:2px solid orange;width:50%;"><div>
-      <div class="J1" style="border:2px solid red;width:50%;"></div>
-	  <div class="J2" style="border:2px solid orange;width:50%;"></div>
 </div>
  </body>
  </html>

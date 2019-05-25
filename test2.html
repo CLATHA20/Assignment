@@ -8,29 +8,55 @@
 	padding:0;
   }
   body{
-    max-width:750%;
+    width:100%;
+	display:flex;
+	justify-content:center;
   }
  .navbar{
+    width:960px;;
     margin:auto;
 	background-color:lightgreen;
 	color:black;
-	intent-content:center;
-	padding:0  90px;
-	height:25px;
  }
- icon.fa{
-   font-size:5px; 
-   margin:inline;
+.icon.fa{
+   width:70%;                                                                                                                                                                                                                                                                       
    float:left;
+   display:flex;
  }
+ .topbar{
+   width:30%;
+   margin:auto;
+  }
+  .nav{
+   width:48%;
+   display:flex;
+   margin:auto;
+  }
+  .bar{
+   width:48%;
+   display:flex;
+   margin:auto;
+  }
  header.a{
    background-color:white;
    margin:auto;
-   padding:10px 90px;
+   width:100%;
+   display:flex;
+ }
+ .logo{
+   width:20%;
+   display:flex;
+ }
+ .footer{
+   width:60%;
+   display:flex;
+   margin:auto;
+ }
+ .click{
+   width:20%;
  }
  .container{
    margin:auto;
-   padding:10px 90px;
  }
  pre{
    position:absolute;
@@ -48,26 +74,41 @@
 </style>
 </head>
 <body>
-  <div class="navbar">
-     <div class="icon">
-          <a href="#"><i class="fa" style="padding-right:10px;">&#xf095;<b>9823567210</b></i></a>
-          <a href="#"><i class="fa" style="padding-right:10px;">&#xf003;<b>latha.mca2018@gmail.com</b></i></a>
-          <a href="#"><i class="fa" style="padding-right:10px;">&#xf041;<b>Hopes Opp.GRG School,Hopes Signal</b></i></a>
-          <a href="#"style="padding-right:20px;padding-left:15px;">LOGIN|SIGNUP</a>
-             <i class="fa"  style="padding-right:10px;padding-left:1px;">&#xf0e1;</i>
-             <i class="fa"  style="padding-right:10px;">&#xf099;</i>
-             <i class="fa"  style="padding-right:10px;">&#xf09a;</i>
-             <i class="fa">&#xf16d;</i></div>
-     </div>
-  <div class="header">
-     <img src="katomaron.jpg" alt="kat" style="width:100px;height:80px;margin-right:15px;display:inline;padding:0 80px;">
-          <a href="#" style="padding-right:10px;">Home</a>
-          <a href="#" style="padding-right:10px;">About Us</a>
-          <a href="#" style="padding-right:10px;">Services</a>
-          <a href="#" style="padding-right:10px;">Pages<i style="font-size:24px" class="fa">&#xf0dd;</i></a>
-          <a href="#" style="padding-right:10px;">Features<i style="font-size:24px" class="fa">&#xf0dd;</i></a>
-          <a href="#" style="padding-right:160px;">News<i style="font-size:24px" class="fa">&#xf0dd;</i></a>
-          <button type="submit">GET IN TOUCH</button>
+  <div class="navbar" style="width:960px;">
+         <div class="icon" style="width:70%;font-size:10px;">
+           <div style="width:33%;"> <i class="fa">&#xf095;<b>9823567210</b></div>
+            <div style="width:33%;padding-right:5px;"><i class="fa">&#xf003;latha.mca2018@gmail.com</i></div>
+            <div style="width:33%;"><i class="fa">&#xf041;<b>Hopes Opp.GRG School,Hopes Signal</b></i></div>
+          </div>
+		  <div class="topbar" style="width:30%;font-size:10px;">
+		     <div class="nav" style="width:49%;">
+		      <div style="width:33%;"><a href="#">LOGIN</a></div>
+			  <div style="width:33%;">|</div>
+			  <div style="width:33%;"><a href="#">SIGNUP</a></div>
+			 </div>
+		    <div class="bar" style="width:49%;">
+             <div style="width:25%;"><a href="#"><i class="fa">&#xf0e1;</i></a></div>
+             <div style="width:24%;"><a href="#"><i class="fa">&#xf099;</i></a></div>
+             <div style="width:25%;"><a href="#"><i class="fa">&#xf09a;</i></a></div>
+             <div style="width:24%;"><a href="#"><i class="fa">&#xf16d;</i></a></div>
+		    </div>
+         </div>
+  </div>
+  <div class="header" style="width:100%;">
+     <div class="logo" style="width:20%;">
+         <img src="katomaron.jpg" alt="kat" style="width:100px;height:80px;margin-right:15px;">
+	 </div>
+	 <div class="footer" style="width:60%;">
+          <div style="width:16%;"><a href="#">Home</a></div>
+          <div style="width:16%;"><a href="#">About Us</a></div>
+          <div style="width:16%;"><a href="#">Services</a></div>
+          <div style="width:16%;"><a href="#">Pages<i class="fa">&#xf0dd;</i></a></div>
+          <div style="width:16%;"><a href="#">Features<i class="fa">&#xf0dd;</i></a></div>
+          <div style="width:16%;"><a href="#">News<i class="fa">&#xf0dd;</i></a></div>
+      </div>
+	  <div class="click" style="width:20%;">
+		  <div><button type="submit">GET IN TOUCH</button></div>
+	  </div>
   </div>
   <div class="container">
      <img src="hole.jpg" width=80% height=60%>
@@ -104,6 +145,5 @@
             <div class="card-footer bg-transparent "> Credit is a financial instrument used to help clients</div>
         </div>
     </div>
-
 </body>
 </html>

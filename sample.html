@@ -3,8 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css"
@@ -19,23 +18,36 @@
         integrity="sha384-i2PyM6FMpVnxjRPi0KW/xIS7hkeSznkllv+Hx/MtYDaHA5VcF0yL3KVlvzp8bWjQ" crossorigin="anonymous">	
 <style>
 *{
-margin:0px;
-padding:0px;
+margin:0;
+padding:0;
 }
-ul.head{
+.body {
+   display: flex;
+   justify-content: center;
+   width : 100%;
+   }
+.head{
 display:flex;
 margin:auto;
-padding:10px;
 background-color:gray;
 color:black;
-list-style-type:none;
-justify-content:center;
+width : 750px;
+}
+.head1 {
+display:flex;
+margin:auto;
+background-color:gray;
+color:black;
+float: left;
 }
 .fa {
 margin:auto;
 text-align: center;
 text-decoration:none;
 display:flex;
+width:3%;
+justify-content:center;
+padding:0px 10px;
 }
 li{
 display:inline-block;
@@ -132,18 +144,22 @@ position: absolute;
 </style>
 </head>
 <body> 
-<ul class="head">
-<i style="font-size:20px" class="fa">&#xf095;</i>
+<div class="head" style="width:100%;">
+<div class="head1"style="padding-left:4px;">
+<i  class="fa" style="font-size:20px; padding-left:50px;">&#xf095;</i>
 <li>80012345678</li>
-<i style="font-size:20px" class="fa">&#xf003;</i>
+<i class="fa" style="font-size:20px; padding-left:50px;">&#xf003;</i>
 <li>INFOCOMPANY</li>
-<i style="font-size:20px" class="fa">&#xf041;</i>
+<i class="fa" style="font-size:20px; padding-left:50px;" >&#xf041;</i>
 <li> 121WORKSTREET STREET NEWYORK,USA</li>
+</div>
+<div class="head1"style="padding-right:4px;" >
 <li>LOGIN|SIGNUP</li>
-<i style="font-size:20px" class="fa">&#xf0e1;</i><br>
-<i style="font-size:20px" class="fa">&#xf099;</i><br>
-<i style="font-size:20px" class="fa">&#xf09a;</i></li>
-</ul><br>
+ <div style="width:25%;"><a href="#"><i class="fa">&#xf0e1;</i></a></div>
+             <div style="width:24%;"><a href="#"><i class="fa">&#xf099;</i></a></div>
+             <div style="width:25%;"><a href="#"><i class="fa">&#xf09a;</i></a></div>
+             <div style="width:24%;"><a href="#"><i class="fa">&#xf16d;</i></a></div>
+</div></div>
 <span>
 <ul class="navbar">
 <li><img src="katomaron.jpg" alt="kat" style="width:100px;height:90px;margin-right:15px;">COMPANY</li>
